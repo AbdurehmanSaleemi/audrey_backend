@@ -34,8 +34,8 @@ app.post('/subscribe', async (req, res) => {
             subscription_data: {
                 trial_period_days: 7, // Add this line for a 14-day trial period
             },
-            success_url: 'http://localhost:5173/payment-success',
-            cancel_url: 'http://localhost:5173/cancel',
+            success_url: 'https://gptbot-4j8.pages.dev/payment-success',
+            cancel_url: 'https://gptbot-4j8.pages.dev/cancel',
         });
         res.json({ id: session.id });
     } catch (error) {
